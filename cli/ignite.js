@@ -46,6 +46,8 @@ function ignite() {
         logger.log(
           chalk.green("You've aleady installed the latest electrode-ignite.\n")
         );
+
+        /* ignite-core */
         igniteCore("oss", process.argv[2]);
       } else {
         /* Case 3: Invalid electrode-ignite version */
