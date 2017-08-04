@@ -28,7 +28,9 @@
   },
   "dependencies": {
     "ignite-core": "../ignite-core",
-    "generator-electrode": "^3.2.0"
+    "generator-electrode": "^3.2.0",
+    "chalk": "^2.0.1",
+    "xsh": "^0.3.0"
   },
   "homepage": "https://github.com/didi0613/electrode-ignite#readme"
 }
