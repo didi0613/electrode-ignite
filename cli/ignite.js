@@ -7,11 +7,9 @@ const igniteCore = require("ignite-core");
 const pkg = require("../package.json");
 const logger = require("../lib/logger");
 const errorHandler = require("../lib/error-handler");
+let startTime;
 
-function ignite() {
-  logger.log(chalk.green(`Welcome to electrode-ignite version ${pkg.version}`));
-  logger.log(chalk.green("Checking latest version available on npm..."));
-
+function checkElectrodeIgnite() {
   xsh
     .exec(true, "npm show electrode-ignite version")
     .then(function(latestVersion) {
@@ -62,6 +60,19 @@ function ignite() {
         "Failed at: checking latest electrode-ignite version on npm"
       )
     );
+}
+
+function ignite() {
+  logger.log(chalk.green(`Welcome to electrode-ignite version ${pkg.version}`));
+  logger.log(chalk.green("Checking latest version available on npm..."));
+
+  if (!startTime || new Date().getTime() - startTime > 24 * 3600) {
+    startTime = undefined;
+    checkElectrodeIgnite();
+  } else {
+    /* ignite-core */
+    igniteCore("oss", process.argv[2]);
+  }
 }
 
 module.exports = ignite;
