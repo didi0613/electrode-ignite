@@ -57,7 +57,7 @@ function checkElectrodeIgnite() {
     .catch(err =>
       errorHandler(
         err,
-        "Failed at: checking latest electrode-ignite version on npm"
+        "Please make sure you've installed electrode-ignite globally."
       )
     );
 }
