@@ -27,9 +27,11 @@
     "url": "https://github.com/didi0613/electrode-ignite/issues"
   },
   "dependencies": {
-    "ignite-core": "../ignite-core",
+    "ignite-core": "1.0.0",
     "chalk": "^2.0.1",
-    "xsh": "^0.3.0"
+    "xsh": "^0.3.0",
+    "yo": "^2.0.0",
+    "generator-electrode": "^3.2.0"
   },
   "homepage": "https://github.com/didi0613/electrode-ignite#readme"
 }
