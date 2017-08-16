@@ -1,7 +1,7 @@
 {
   "name": "electrode-ignite",
   "version": "1.0.0",
-  "description": "",
+  "description": "A bootstrap tool for installing, updating, and assiting development with OSS Electrode platform.",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -19,19 +19,24 @@
   ],
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/didi0613/electrode-ignite.git"
+    "url": "https://github.com/electrode-io/electrode.git"
   },
-  "author": "Sheng Di",
+  "author": {
+    "name": "Sheng Di",
+    "email": "sdi@walmartlabs.com",
+    "url": "https://github.com/didi0613"
+  },
   "license": "Apache-2.0",
   "bugs": {
-    "url": "https://github.com/didi0613/electrode-ignite/issues"
+    "url": "https://github.com/electrode-io/electrode/issues"
   },
   "dependencies": {
-    "ignite-core": "1.0.0",
     "chalk": "^2.0.1",
+    "generator-electrode": "^3.2.0",
+    "ignite-core": "^1.0.0",
     "xsh": "^0.3.0",
-    "yo": "^2.0.0",
-    "generator-electrode": "^3.2.0"
+    "yo": "^2.0.0"
   },
-  "homepage": "https://github.com/didi0613/electrode-ignite#readme"
+  "license": "Apache-2.0",
+  "homepage": "http://www.electrode.io"
 }
